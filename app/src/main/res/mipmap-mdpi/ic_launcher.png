@@ -1,0 +1,55 @@
+/*
+ * Copyright 2010 the original author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package org.gradle.api;
+
+import groovy.lang.Closure;
+import groovy.lang.MissingPropertyException;
+import org.gradle.api.logging.Logger;
+import org.gradle.api.logging.LoggingManager;
+import org.gradle.api.plugins.Convention;
+import org.gradle.api.plugins.ExtensionAware;
+import org.gradle.api.provider.Property;
+import org.gradle.api.provider.Provider;
+import org.gradle.api.specs.Spec;
+import org.gradle.api.tasks.Internal;
+import org.gradle.api.tasks.Optional;
+import org.gradle.api.tasks.TaskDependency;
+import org.gradle.api.tasks.TaskDestroyables;
+import org.gradle.api.tasks.TaskInputs;
+import org.gradle.api.tasks.TaskLocalState;
+import org.gradle.api.tasks.TaskOutputs;
+import org.gradle.api.tasks.TaskState;
+
+import javax.annotation.Nullable;
+import java.io.File;
+import java.time.Duration;
+import java.util.List;
+import java.util.Set;
+
+/**
+ * <p>A <code>Task</code> represents a single atomic piece of work for a build, such as compiling classes or generating
+ * javadoc.</p>
+ *
+ * <p>Each task belongs to a {@link Project}. You can use the various methods on {@link
+ * org.gradle.api.tasks.TaskContainer} to create and lookup task instances. For example, {@link
+ * org.gradle.api.tasks.TaskContainer#create(String)} creates an empty task with the given name. You can also use the
+ * {@code task} keyword in your build file: </p>
+ * <pre>
+ * task myTask
+ * task myTask { configure closure }
+ * task myTask(type: SomeType)
+ * task myTa

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/saccx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acc X" />
+
+    <TextView
+        android:id="@+id/saccy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acc Y" />
+
+    <TextView
+        android:id="@+id/saccz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acc Z" />
+
+    <TextView
+        android:id="@+id/smagnetx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mag X" />
+
+    <TextView
+        android:id="@+id/smagnety"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mag Y" />
+
+    <TextView
+        android:id="@+id/smagnetz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mag Z" />
+
+    <TextView
+        android:id="@+id/sgyrox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gyro X" />
+
+    <TextView
+        android:id="@+id/sgyroy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gyro Y" />
+
+    <TextView
+        android:id="@+id/sgyroz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gyro Z" />
+
+    <TextView
+        android:id="@+id/sfilterx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter X" />
+
+    <TextView
+        android:id="@+id/sfiltery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter Y" />
+
+    <TextView
+        android:id="@+id/sfilterz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter Z" />
+
+    <TextView
+        android:id="@+id/smagnitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Magnitude" />
+</LinearLayout>
